@@ -1,0 +1,14 @@
+test_kind: js_test
+
+selector:
+  roots:
+  - jstests/sharding/*.js
+
+executor:
+  archive:
+    tests:
+      - jstests/sharding/zbigMapReduce.js
+  config:
+    shell_options:
+      nodb: ''
+      readMode: commands
